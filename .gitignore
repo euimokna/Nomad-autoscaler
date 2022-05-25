@@ -1,0 +1,10 @@
+**/.terraform
+**/.ssh
+**/.kube
+
+**/*.tfstate*
+**/*.lock.*
+**/packer.zip
+**/*.pem
+packer*/*.sh
+terraform/*.sh
