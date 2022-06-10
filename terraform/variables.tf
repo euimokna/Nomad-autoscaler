@@ -39,6 +39,7 @@ variable "main_2_cidr" {
 
 variable "instance_type" {
   default = "t2.micro"
+  #default = "m5.large"
 }
 
 #####################

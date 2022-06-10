@@ -35,8 +35,10 @@ data "aws_iam_policy_document" "nomad_server" {
       "ec2:DescribeInstances",
       "ec2:DescribeTags",
       "autoscaling:DescribeAutoScalingGroups",
-      "autoscaling:DescribeScalingActivities", #반드시 추가해야 함.
-      "autoscaling:UpdateAutoScalingGroup", 
+      "autoscaling:DescribeScalingActivities", 
+      "autoscaling:UpdateAutoScalingGroup",
+      "autoscaling:TerminateInstanceInAutoScalingGroup",
+      "autoscaling:CreateOrUpdateTags", 
     ]
 
     resources = ["*"]

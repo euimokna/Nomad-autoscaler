@@ -12,6 +12,7 @@ do
 done
 
 sudo cat <<EOCONFIG > /etc/nomad.d/nomad.hcl
+datacenter = "dc1"
 data_dir = "/var/lib/nomad/data"
 bind_addr = "{{ GetInterfaceIP \"eth0\" }}"
 server {
